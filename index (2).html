@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" style="--bg: #e4ebe2; --surface: #f1f6ef; --band: #d3ddd0; --ink: #1f2a22; --muted: #566358; --line: #c3d0c0; --btn: #1f2a22; --btn-ink: #e4ebe2; --accent: #3b5b92;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Reading Room | Alex Morgan</title>
+<style>
+:root{--bg:#f4f1e9;--surface:#fbfaf6;--ink:#20241f;--muted:#686a60;--line:#deded3;--accent:#b15f43;--band:#e6e4d8;--deep:#20241f;--deep-ink:#f8f5ed;--btn:#20241f;--btn-ink:#fff;--serif:Georgia,'Times New Roman',serif;--sans:Inter,Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161915;--surface:#1f231e;--ink:#ece9df;--muted:#a6a99c;--line:#353a32;--accent:#dc8f70;--band:#232821;--deep:#0d0f0c;--deep-ink:#f1eee4;--btn:#ece9df;--btn-ink:#161915}}
+:root[data-theme="dark"]{--bg:#161915;--surface:#1f231e;--ink:#ece9df;--muted:#a6a99c;--line:#353a32;--accent:#dc8f70;--band:#232821;--deep:#0d0f0c;--deep-ink:#f1eee4;--btn:#ece9df;--btn-ink:#161915}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--sans)}
+[hidden]{display:none!important}a{color:inherit}
+.shell{width:min(1160px,calc(100% - 56px));margin:auto}
+.top{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.wordmark{font:italic 26px var(--serif);letter-spacing:-1px;text-decoration:none}.wordmark i{color:var(--accent);font-style:normal}
+.nav{display:flex;gap:28px}.nav a{text-decoration:none;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}.nav a:hover{color:var(--accent)}
+.sec{padding:82px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--accent);font-weight:700}
+.h2{font:normal clamp(34px,4vw,52px)/1.08 var(--serif);letter-spacing:-1.5px;margin:10px 0 30px}
+.sub{font:16px/1.7 var(--serif);color:var(--muted);max-width:400px;margin:0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:34px}.head .h2{margin-bottom:0}
+.body{font:17px/1.85 var(--serif);color:var(--muted);white-space:pre-wrap;max-width:640px}
+.narrow{max-width:760px}
+.btn{display:inline-flex;align-items:center;padding:14px 21px;background:var(--btn);color:var(--btn-ink);text-decoration:none;text-transform:uppercase;font-size:11px;letter-spacing:1.6px;border:1px solid var(--btn)}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.quiet{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:5px}
+.hero-sec{border-top:0;padding:74px 0 82px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero h1{font:normal clamp(50px,7vw,88px)/.99 var(--serif);letter-spacing:-3.5px;margin:20px 0 24px}.hero h1 em{color:var(--accent)}
+.intro{font:19px/1.75 var(--serif);color:var(--muted);max-width:560px}
+.hb{display:flex;align-items:center;gap:22px;margin-top:30px;flex-wrap:wrap}
+[data-img]{background-size:cover;background-position:center}
+.has>*{visibility:hidden}.has:before,.has:after{display:none!important}
+.hero-art{position:relative;min-height:430px;background-color:#d7d4c6;overflow:hidden}
+.hero-art.has>*{visibility:visible;text-shadow:0 1px 10px rgba(0,0,0,.4)}
+.art-note{position:absolute;top:26px;right:26px;font:italic 19px/1.3 var(--serif);color:#fff;text-align:right}
+.art-caption{position:absolute;bottom:22px;left:24px;color:#fff;font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.lead{display:grid;grid-template-columns:1fr 1fr;background:var(--surface);box-shadow:0 18px 50px #0000001a}
+.lead-v{min-height:380px;background-color:#c5c8b8;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.lead-v:after{content:"";position:absolute;width:170px;height:250px;background:linear-gradient(135deg,#e8d4b6,#a36f56);transform:rotate(-18deg);box-shadow:44px 30px 0 #68796a}
+.lead-v span{position:relative;z-index:2;font:italic 32px/1.2 var(--serif);color:#fff;text-align:center;max-width:220px}
+.lead-c{padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.meta{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent);font-weight:700}
+.lead-c h3{font:normal clamp(32px,4vw,46px)/1.1 var(--serif);letter-spacing:-1px;margin:16px 0}
+.lead-c p{font:17px/1.8 var(--serif);color:var(--muted);margin:0 0 26px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card,.book{position:relative}
+.card{background:var(--surface);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;min-height:290px}
+.cardtop{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cat{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent);font-weight:700}
+.tag{font-size:10px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line);padding:5px 7px;color:var(--muted)}
+.card h3{font:normal 26px/1.15 var(--serif);margin:22px 0 12px}
+.card p{font:15px/1.75 var(--serif);color:var(--muted);margin:0 0 22px}
+.foot{margin-top:auto;padding-top:16px;border-top:1px solid var(--line)}
+.rl{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:4px}
+.cover{aspect-ratio:2/3;background-color:var(--accent);color:#fff;border-radius:3px 10px 10px 3px;padding:22px 20px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 14px 30px -14px #000a,inset 6px 0 0 #0003}
+.cover b{font:normal clamp(26px,3vw,34px)/1.05 var(--serif);letter-spacing:-.5px}.cover i{font-style:normal;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;opacity:.9}
+.book:nth-child(3n+2) .cover{background-color:#2c3a31}.book:nth-child(3n) .cover{background-color:#d9c7b7;color:#20241f}
+.book p{font:16px/1.7 var(--serif);color:var(--muted);margin:18px 0 16px}
+.band{background:var(--band);text-align:center;padding:62px 0}
+.band blockquote{font:italic clamp(26px,3.5vw,40px)/1.35 var(--serif);max-width:800px;margin:0 auto 18px;white-space:pre-wrap}
+.cite{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.stamp{min-height:300px;background-color:#d9c7b7;display:flex;align-items:center;justify-content:center;font:italic 26px var(--serif);color:#fff;text-align:center;padding:20px}
+.split .h2{margin-top:10px}
+.sign{font:italic 27px var(--serif);color:var(--accent);margin-top:22px}
+.connect{background:var(--deep);color:var(--deep-ink);padding:54px 58px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.connect .h2{margin:10px 0}.connect p{font:15px/1.7 var(--serif);color:#c5c5ba;margin:0;max-width:500px;white-space:pre-wrap}
+.connect .btn{background:var(--deep-ink);color:var(--deep);border-color:var(--deep-ink);white-space:nowrap}.connect .btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:14px}.chipw{position:relative;display:inline-block}
+.chip{display:inline-block;padding:10px 18px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;color:var(--ink);background:var(--surface)}.chip:hover{border-color:var(--accent);color:var(--accent)}
+.pad{padding:0 0 58px}
+footer{padding:30px 0 120px;color:var(--muted);font-size:11px;letter-spacing:1.3px;text-transform:uppercase}
+@media(max-width:820px){.shell{width:calc(100% - 34px)}.hero,.split,.lead{grid-template-columns:1fr;gap:32px}.cards{grid-template-columns:1fr 1fr}.head{display:block}.head .sub{margin-top:14px}.connect{display:block;padding:36px 26px}.connect .btn{margin-top:22px}.sec{padding:60px 0}.nav{gap:14px}.hero-art{min-height:300px}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .top{border-bottom:0;height:68px}
+body:before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:16}
+.nav{overflow-x:auto;white-space:nowrap}
+.card,.lead,.chip,.cover,.connect{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover,.lead:hover{transform:translateY(-6px);box-shadow:0 22px 44px -20px #0005;border-color:var(--accent)}
+.chip:hover{transform:translateY(-3px)}.cover:hover{transform:translateY(-6px) rotate(-1deg)}.connect:hover{transform:translateY(-3px)}
+.editing .card:hover,.editing .lead:hover,.editing .cover:hover,.editing .chip:hover,.editing .connect:hover{transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.auto-off{display:none!important}
+#pens{position:fixed;inset:0;pointer-events:none;z-index:18}
+#pens i{position:fixed;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font:normal 12px/22px var(--sans);text-align:center;box-shadow:0 2px 6px #0004}
+.formbox iframe{width:100%;height:780px;border:0;background:#fff;border-radius:6px;margin-bottom:18px}
+.fnote{display:none;color:var(--muted);font-weight:400;margin:0 0 14px}.editing .fnote{display:block}
+.panel input[type=text],.panel input[type=password],.dlg input{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:inherit;font-weight:400;margin:8px 0}
+.sw.bg button{border-radius:8px}
+/* editor */
+.x,.add{display:none}
+.editing .x{display:block}.editing .add{display:inline-block}
+.editing [data-e]:hover,.editing [data-img]:hover{outline:2px dashed var(--accent);outline-offset:4px}
+.editing [data-e]:focus{outline:2px solid var(--accent);outline-offset:4px}
+.editing [data-e]{cursor:text}.editing [data-img]{cursor:pointer}
+[data-ui]{font:600 14px/1.4 var(--sans);letter-spacing:0;text-transform:none;color:var(--ink)}
+.x{position:absolute;top:-10px;right:-10px;z-index:3;width:30px;height:30px;border-radius:50%;border:0;background:var(--accent);color:#fff;font-size:18px;line-height:1;cursor:pointer;padding:0}
+.add{margin-top:20px;background:transparent;border:2px dashed var(--accent);color:var(--accent);padding:11px 16px;border-radius:8px;cursor:pointer}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;z-index:20}
+.pb,.fab button{font:inherit;padding:11px 16px;border-radius:8px;border:2px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+.pb.o,.fab .o{background:var(--surface);color:var(--accent)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.hint{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:25;background:var(--deep);color:var(--deep-ink);padding:9px 16px;border-radius:999px;font-weight:400;max-width:calc(100% - 24px);text-align:center}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(360px,100%);background:var(--surface);border-left:1px solid var(--line);padding:calc(18px + env(safe-area-inset-top,0px)) 18px calc(90px + env(safe-area-inset-bottom,0px));overflow-y:auto;z-index:30;transform:translateX(105%);transition:transform .2s}
+.panel.open{transform:none}
+.panel h3{font:700 16px var(--sans);margin:22px 0 8px}.panel h3:first-child{margin-top:4px}
+.note{color:var(--muted);font-weight:400;font-size:13.5px;margin:6px 0}
+.sw{display:flex;gap:10px}.sw button{width:34px;height:34px;padding:0;border-radius:50%;border:3px solid var(--surface);box-shadow:0 0 0 2px var(--line);cursor:pointer}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)}
+.row label{display:flex;gap:8px;align-items:center;font-weight:400}.row input{width:18px;height:18px;accent-color:var(--accent)}
+.row button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:4px 9px;margin-left:4px;cursor:pointer;font:inherit}
+.panel select,.lp input{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:inherit;font-weight:400}
+.panel details{margin-top:14px}.panel summary{cursor:pointer;color:var(--accent);padding:6px 0}.panel details .pb{margin-top:10px}
+.lp{position:fixed;z-index:35;width:min(320px,calc(100% - 20px));background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px;box-shadow:0 12px 36px #0004}
+.lp label{display:block;font-weight:600;margin-bottom:6px}
+.dlg{position:fixed;inset:0;background:#0008;display:none;place-items:center;z-index:40;padding:16px}.dlg.open{display:grid}
+.dlg>div{background:var(--surface);border-radius:12px;padding:20px;width:min(640px,100%)}
+.dlg textarea{width:100%;height:170px;margin:10px 0;font:12.5px/1.4 ui-monospace,Menlo,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px}
+</style>
+</head>
+<body class="">
+<header class="topbar"><div class="shell top">
+  <a class="wordmark" href="#"><span data-e="">The power of writing</span><i>.</i></a>
+  <nav class="nav"><a href="#writing">Start here</a><a href="#books">Books</a><a href="#about">About</a><a href="#feedback">Feedback form</a><a href="#connect">Connect</a></nav></div>
+</header>
+<main id="main" data-navset="">
+<section id="hero" class="sec hero-sec" data-sec="" data-label="Intro"><div class="shell hero">
+  <div>
+    <div class="eyebrow" data-e="">Independent writer · Notes on being human</div>
+    <h1 data-e="">Ideas deserve<br>a <em>place to live.</em></h1>
+    <div class="intro" data-e="" data-ml="">I’m Alex Morgan, a writer drawn to the questions beneath the surface. Here you’ll find essays, stories, and thoughts I hope will stay with you.</div>
+    <div class="hb"><a class="btn lk" href="#writing" data-e="">Explore the writing ↓</a><a class="quiet lk" href="#about" data-e="">A little about me</a></div>
+  </div>
+  <div class="hero-art has" data-img="" style="background-image:url(data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z)"><div class="art-note" data-e="" data-ml="">A collection of thoughts.</div><div class="art-caption" data-e="">Essays · Stories · Observations</div></div>
+</div></section>
+<section id="writing" class="sec" data-sec="" data-label="Start here" data-nav=""><div class="shell">
+  <div class="head"><div><div class="eyebrow" data-e="">A handpicked read</div><h2 class="h2" data-e="">Start here.</h2></div><p class="sub" data-e="" data-ml="">One story to open the door. Browse the rest of the collection below, and follow any link to its original home.</p></div>
+  <article class="lead">
+    <div class="lead-v" data-img=""><span data-e="" data-ml="">The shape of an idea</span></div>
+    <div class="lead-c"><div class="meta" data-e="">Editor’s pick · 7 minute read</div><h3 data-e="">The quiet revolution of paying attention</h3><p data-e="" data-ml="">We move through the world surrounded by things asking for our attention. But what happens when we choose, deliberately, to notice? A reflection on presence and the details that make a life.</p><a class="quiet lk" href="https://medium.com/" target="_blank" rel="noopener" data-e="">Read the full story ↗</a></div>
+  </article>
+</div></section>
+<section id="archive" class="sec" data-sec="" data-label="Writing"><div class="shell">
+  <div class="head"><div><div class="eyebrow" data-e="">The archive</div><h2 class="h2" data-e="">More to discover.</h2></div><p class="sub" data-e="" data-ml="">Essays, fiction, experiments, and passing thoughts. Each piece has its own little doorway.</p></div>
+  <div class="cards" data-tpl="card">
+    <article class="card"><div class="cardtop"><span class="cat" data-e="">Essay</span><span class="tag" data-e="">Free to read</span></div><h3 data-e="">The language of almost</h3><p data-e="" data-ml="">There are moments that never quite become memories, and feelings that resist the neatness of a sentence. A small essay about everything in between.</p><div class="foot"><a class="lk rl" href="https://medium.com/" target="_blank" rel="noopener" data-e="">Read story ↗</a></div></article>
+    <article class="card"><div class="cardtop"><span class="cat" data-e="">Fiction</span><span class="tag" data-e="">Member story</span></div><h3 data-e="">A map of imaginary places</h3><p data-e="" data-ml="">What if the places we invent tell us more about home than the places we have actually lived? A journey through imagination and belonging.</p><div class="foot"><a class="lk rl" href="https://medium.com/" target="_blank" rel="noopener" data-e="">Read story ↗</a></div></article>
+    <article class="card"><div class="cardtop"><span class="cat" data-e="">Ideas</span><span class="tag" data-e="">Friend’s story</span></div><h3 data-e="">The courage to change your mind</h3><p data-e="" data-ml="">Changing your mind is not always a retreat. Sometimes it is the clearest sign that you are still paying attention.</p><div class="foot"><a class="lk rl" href="https://medium.com/" target="_blank" rel="noopener" data-e="">Read story ↗</a></div></article>
+  </div>
+  
+</div></section>
+<section id="books" class="sec" data-sec="" data-label="Books" data-nav=""><div class="shell">
+  <div class="head"><div><div class="eyebrow" data-e="">On the shelf</div><h2 class="h2" data-e="">Books.</h2></div><p class="sub" data-e="" data-ml="">Longer work, collected in one place. Click a cover to add your own artwork.</p></div>
+  <div class="cards" data-tpl="book">
+    <article class="book"><div class="cover" data-img=""><b data-e="">Small Hours</b><i data-e="">Alex Morgan</i></div><p data-e="" data-ml="">Essays on the quiet time between midnight and morning, when the mind says what it means.</p><a class="btn lk" href="#" target="_blank" rel="noopener" data-e="">Get the book ↗</a></article>
+    <article class="book"><div class="cover" data-img=""><b data-e="">A Map of Imaginary Places</b><i data-e="">Alex Morgan</i></div><p data-e="" data-ml="">Eleven short stories about invented towns and the very real people who leave them.</p><a class="btn lk" href="#" target="_blank" rel="noopener" data-e="">Get the book ↗</a></article>
+    <article class="book"><div class="cover" data-img=""><b data-e="">Notes on Being Human</b><i data-e="">Alex Morgan</i></div><p data-e="" data-ml="">A pocket-sized collection of ideas worth carrying around for a while.</p><a class="btn lk" href="#" target="_blank" rel="noopener" data-e="">Get the book ↗</a></article>
+  </div>
+  
+</div></section>
+
+<section id="quote" class="sec band" data-sec="" data-label="Quote"><div class="shell"><blockquote data-e="" data-ml="">“A good story doesn’t simply tell us what happened. It changes the way we look at what happens next.”</blockquote><span class="cite" data-e="">A note from the author</span></div></section>
+<section id="about" class="sec" data-sec="" data-label="About" data-nav=""><div class="shell split">
+  <div class="stamp" data-img=""><span data-e="">A.M.</span></div>
+  <div><div class="eyebrow" data-e="">Behind the pages</div><h2 class="h2" data-e="">Hello. I’m glad you’re here.</h2>
+<div class="body" data-e="" data-ml="">I’m Alex, a writer, curious observer, and collector of questions. I write to explore the ideas that connect our inner lives with the world around us.
+
+This page brings my work together in one place. Some pieces live on Medium, some are shared elsewhere, and a few belong to friends whose writing deserves to travel further.
+
+Thank you for reading. Your time is the most generous thing you can give a writer.</div>
+  <div class="sign" data-e="">Alex</div></div>
+</div></section>
+<section id="social" class="sec" data-sec="" data-label="Social links"><div class="shell"><div class="eyebrow" data-e="">Elsewhere</div><h2 class="h2" data-e="">Find me online.</h2><div class="chips" data-tpl="chip"><span class="chipw"><a class="chip lk" href="https://youtube.com" target="_blank" rel="noopener" data-e="">YouTube</a></span></div></div></section>
+<section id="feedback" class="sec" data-sec="" data-label="Feedback form" data-nav=""><div class="shell narrow"><div class="eyebrow" data-e="">Your thoughts</div><h2 class="h2" data-e="">Send me feedback.</h2><p class="body" style="margin:0 0 22px" data-e="" data-ml="">Questions, ideas, or a kind word. Fill in the form and it reaches me directly.</p><div class="formbox"><a class="btn lk" data-form="" href="https://forms.gle/CiqnTaMuh4RL6F4t7" target="_blank" rel="noopener" data-e="">Open the feedback form ↗</a></div></div></section>
+<section id="connect" class="sec pad" data-sec="" data-label="Connect" style="border-top:0" data-nav=""><div class="shell"><div class="connect"><div><div class="eyebrow" style="color:#d7a58d" data-e="">Continue the conversation</div><h2 class="h2" data-e="">Meet me where I write.</h2><p data-e="" data-ml="">Follow my work on Medium for new essays and stories, or get in touch through your favourite corner of the internet.</p></div><a class="btn lk" href="https://medium.com/" target="_blank" rel="noopener" data-e="">Visit my Medium profile ↗</a></div></div></section>
+</main>
+<footer class="shell"><span data-e="">© 2026 Alex Morgan · All words, their own journeys.</span></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
